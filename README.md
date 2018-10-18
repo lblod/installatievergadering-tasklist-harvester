@@ -1,6 +1,6 @@
-# Toezicht Forms Harvester
+#Installatievergadering Tasklist harvester
 
-This script generates form data frontent-loket/toezicht component.
+Script to parse google sheet with tasklist data (for installatievergadering) in a ttl file
 
 Google spreadsheet is used as data source. Please read this [tutorial](https://developers.google.com/sheets/api/quickstart/ruby) to get started.
 
@@ -13,7 +13,7 @@ Google spreadsheet is used as data source. Please read this [tutorial](https://d
 
 ## Expected output
 <dl>
-<dt>output/touzicht-forms.ttl</dt>
+<dt>output/tasklist-data.ttl</dt>
 <dd>File with forms in a .ttl file.</dd>
 </dl>
 

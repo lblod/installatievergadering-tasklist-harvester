@@ -42,10 +42,10 @@ class TasklistData
     task_hash = {}
     task_hash["title"] = task_data["titel taak"]
     task_hash["description"] = task_data["taakbeschrijving"]
-    task_hash["priority"] = task_data["priorteit"].to_i
+    task_hash["priority"] = task_data["prioriteit"].to_i
     task_hash["id"] = task_data["taak id"]
     task_hash["parent"] = task_data["parent taak"].length != 0 ? task_data["parent taak"] : nil
-    task_hash["tasklist_id"] = task_data["parent taak"].length != 0 ? nil : task_data["id"] # basically the parent where it belongs to
+    task_hash["tasklist_id"] = task_data["parent taak"] == "" ? task_data["id takenlijst"].to_i : nil # basically the parent where it belongs to
     task_hash
   end
 
