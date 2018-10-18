@@ -1,4 +1,4 @@
-#Installatievergadering Tasklist harvester
+# Installatievergadering Tasklist harvester
 
 Script to parse google sheet with tasklist data (for installatievergadering) in a ttl file
 
