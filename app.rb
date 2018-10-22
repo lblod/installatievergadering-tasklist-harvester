@@ -70,7 +70,11 @@ class TasklistSerializer
     @graph << RDF.Statement(subject, RDF.type, EXT["Task"])
     @graph << RDF.Statement(subject, MU.uuid, uuid)
     @graph << RDF.Statement(subject, EXT["taskTitle"], task["title"])
-    @graph << RDF.Statement(subject, EXT["taskDescription"], task["description"])
+
+    if task["description"]
+      @graph << RDF.Statement(subject, EXT["taskDescription"], task["description"])
+    end
+
     @graph << RDF.Statement(subject, EXT["taskPriority"], task["priority"])
 
     if task["click_target"] && task["click_target"].length > 0
