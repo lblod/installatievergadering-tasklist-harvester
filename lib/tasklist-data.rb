@@ -44,6 +44,7 @@ class TasklistData
     task_hash["description"] = task_data["taakbeschrijving"]
     task_hash["priority"] = task_data["prioriteit"].to_i
     task_hash["id"] = task_data["taak id"]
+    task_hash["click_target"] = task_data["plaatsnaam voor link"]
     task_hash["parent"] = task_data["parent taak"].length != 0 ? task_data["parent taak"] : nil
     task_hash["tasklist_id"] = task_data["parent taak"] == "" ? task_data["id takenlijst"].to_i : nil # basically the parent where it belongs to
     task_hash
