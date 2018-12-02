@@ -20,7 +20,7 @@ class TasklistData
 
   def get_tasklist_data
     file_id = '17gu6AC6qsjjK4NtSdSGJCM_kucnR6sHE8su_WClNVXs'
-    inputs_tab = "taken"
+    inputs_tab = "taken-installatievergadering"
     @client.get_spreadsheet_tab_values(file_id, inputs_tab)
   end
 
